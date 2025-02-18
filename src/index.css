@@ -11,3 +11,71 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.citis{
+  display: inline-block;
+padding: 10px;
+background-color: aqua;
+border: 2px solid black; 
+  border-radius: 5px;
+  width: 150px; 
+  text-align: center; 
+}
+.flex-city{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.company-box {
+  padding: 10px;
+  background-color: lightblue;
+  border: 2px solid black;
+  border-radius: 5px;
+  text-align: center;
+  min-width: 120px;
+}
+
+
+/* Style for Navigation List */
+.navbar{
+  display: flex !important;
+  justify-content: center !important;
+  background: burlywood;
+}
+
+.navbar .nav-list{
+  list-style: none;
+}
+.navlist{
+  display: flex !important;
+  gap: 20px !important;
+}
+.navlist a{
+  text-decoration: none;
+  transition: 2s;
+}
+.navlist a:hover{
+color: azure;
+
+}
+.buttons{
+  display: none !important;
+}
+@media (max-width:767px) {
+  .navbar{
+    justify-content: start !important;
+  }
+  .navlist{
+
+    flex-direction: column;
+    gap: 0 !important;
+  }
+  .buttons{
+    display: block !important;
+  }
+}
